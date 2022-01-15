@@ -1,3 +1,61 @@
-div {
-  color: black;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(245, 245, 245);
+}
+
+.file-manager {
+  background-color: #fff;
+  width: 500px;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 8px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.425);
+}
+
+.level-up {
+  display: flex;
+  align-items: center;
+}
+
+a, .file, .folder {
+  display: flex;
+  align-items: flex-end;
+  text-decoration: none;
+}
+
+.folder, .level-up {
+  color: rgb(0, 0, 158);
+}
+
+a:hover {
+  color: rgb(175, 0, 0);
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.material-icons {
+  margin-right: 10px;
+}
+
+.current-level {
+  margin: 20px 0;
+}
+
+.folder-list {
+  list-style: none;
 }
